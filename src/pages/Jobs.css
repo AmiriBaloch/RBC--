@@ -1,0 +1,252 @@
+.jobs-page {
+  padding: 1rem;
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 2rem;
+  padding: 0.8rem 1.5rem;
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: #3a4a5c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #4e73df, #36b9cc);
+}
+
+.page-title svg {
+  color: #ffffff !important;
+}
+
+.add-button {
+  background-color: #2AA96B;
+  border-color: #2AA96B;
+  display: flex;
+  align-items: center;
+}
+
+.add-button:hover,
+.add-button:focus,
+.add-button:active {
+  background-color: #21865c !important;
+  border-color: #21865c !important;
+}
+
+.icon-left {
+  margin-right: 0.5rem;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input {
+  padding-left: 35px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.jobs-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.jobs-table .description-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-button {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+td .action-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.job-detail h5 {
+  color: #3a4a5c;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.job-detail p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.job-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.job-detail ul {
+  padding-left: 1.5rem;
+}
+
+.job-detail li {
+  margin-bottom: 0.5rem;
+}
+
+/* General styles */
+.jobs-container {
+  width: 100%;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767.98px) {
+  .jobs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .jobs-header h2 {
+    margin-bottom: 10px;
+  }
+  
+  .add-job-btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .job-item {
+    padding: 10px;
+  }
+  
+  .job-title {
+    font-size: 16px;
+  }
+  
+  .job-actions {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .job-details-container {
+    padding: 10px;
+  }
+  
+  /* Form layout adjustments */
+  .job-form-row {
+    flex-direction: column;
+  }
+  
+  .job-form-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .jobs-page {
+    padding: 0.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    margin: 0.25rem 0 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .add-button {
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .jobs-table th, 
+  .jobs-table td {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .jobs-table .description-cell {
+    max-width: 120px;
+  }
+  
+  /* Hide less important columns on small screens */
+  .jobs-table th:nth-child(3),
+  .jobs-table td:nth-child(3) {
+    display: none;
+  }
+  
+  .action-button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .search-input {
+    font-size: 0.875rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .page-title {
+    font-size: 1.8rem;
+    margin: 0.4rem 0 1.5rem;
+    padding: 0.7rem 1.2rem;
+  }
+  
+  .jobs-table .description-cell {
+    max-width: 200px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .jobs-table .description-cell {
+    max-width: 250px;
+  }
+} 

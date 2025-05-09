@@ -1,0 +1,423 @@
+.dashboard {
+  padding: 1rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 2rem;
+  padding: 0.8rem 1.5rem;
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: #3a4a5c;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title svg {
+  color: #ffffff !important;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #4e73df, #36b9cc);
+}
+
+.stats-cards .stat-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stats-cards .stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-cards .stat-card .card-body {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.stats-cards .stat-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.stats-cards .stat-details h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.stats-cards .stat-details p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Card-specific colors */
+.announcement-card .stat-icon {
+  color: #28a745;
+}
+
+.job-card .stat-icon {
+  color: #007bff;
+}
+
+.application-card .stat-icon {
+  color: #fd7e14;
+}
+
+.visitor-card .stat-icon {
+  color: #6f42c1;
+}
+
+/* Analytics Section Styles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #2AA96B;
+  color: #333;
+}
+
+.visitor-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visitor-stat-item {
+  display: flex;
+  align-items: center;
+}
+
+.visitor-stat-item .stat-icon {
+  color: #6f42c1;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  min-width: 40px;
+}
+
+.visitor-stat-item h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.visitor-stat-item p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* Card Headers */
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header h5 {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* Recent Items */
+.recent-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #2AA96B;
+}
+
+.recent-item-content {
+  flex: 1;
+}
+
+.recent-item-content h6 {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.recent-item-date {
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+.date-icon {
+  margin-right: 5px;
+}
+
+/* Applicant Section Styles */
+.applicant-stats .applicant-card {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.applicant-stats .applicant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.applicant-stats .applicant-card .card-body {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.applicant-stats .applicant-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.applicant-stats .applicant-details {
+  z-index: 2;
+}
+
+.applicant-stats .applicant-details h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.applicant-stats .applicant-details p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Card-specific colors */
+.district-manager-card {
+  background-color: #f8f9ff;
+}
+
+.district-manager-card .applicant-icon {
+  color: #4361ee;
+  background-color: rgba(67, 97, 238, 0.1);
+}
+
+.trainer-card {
+  background-color: #fff8f9;
+}
+
+.trainer-card .applicant-icon {
+  color: #f72585;
+  background-color: rgba(247, 37, 133, 0.1);
+}
+
+.supervisor-card {
+  background-color: #f6fefd;
+}
+
+.supervisor-card .applicant-icon {
+  color: #2b9348;
+  background-color: rgba(43, 147, 72, 0.1);
+}
+
+.surveyor-card {
+  background-color: #fffaf6;
+}
+
+.surveyor-card .applicant-icon {
+  color: #fb8500;
+  background-color: rgba(251, 133, 0, 0.1);
+}
+
+/* Total applicants card */
+.total-applicants-card {
+  background: linear-gradient(135deg, #3a4a5c, #2AA96B);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.total-applicants-card .card-body {
+  padding: 1.5rem;
+}
+
+.total-count {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Download button styles */
+.download-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+}
+
+.district-manager-card .download-btn {
+  color: #4361ee;
+  border-color: #4361ee;
+}
+
+.district-manager-card .download-btn:hover:not(:disabled) {
+  background-color: #4361ee;
+  color: white;
+}
+
+.trainer-card .download-btn {
+  color: #f72585;
+  border-color: #f72585;
+}
+
+.trainer-card .download-btn:hover:not(:disabled) {
+  background-color: #f72585;
+  color: white;
+}
+
+.supervisor-card .download-btn {
+  color: #2b9348;
+  border-color: #2b9348;
+}
+
+.supervisor-card .download-btn:hover:not(:disabled) {
+  background-color: #2b9348;
+  color: white;
+}
+
+.surveyor-card .download-btn {
+  color: #fb8500;
+  border-color: #fb8500;
+}
+
+.surveyor-card .download-btn:hover:not(:disabled) {
+  background-color: #fb8500;
+  color: white;
+}
+
+.download-all-btn {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.download-all-btn:hover:not(:disabled) {
+  background-color: white;
+  color: #3a4a5c;
+  border-color: white;
+}
+
+/* Modify the layout to leave space for the download button */
+.applicant-stats .applicant-card .card-body {
+  padding-bottom: 3.5rem;
+}
+
+/* Responsive styles for download buttons */
+@media (max-width: 767.98px) {
+  .download-btn {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .applicant-stats .applicant-card .card-body {
+    padding-bottom: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .download-all-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* Responsive styles for the applicant cards */
+@media (max-width: 767.98px) {
+  .applicant-stats .applicant-card .card-body {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem 1rem;
+  }
+  
+  .applicant-stats .applicant-icon {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .applicant-stats .applicant-details h3 {
+    font-size: 1.75rem;
+  }
+  
+  .total-count {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+  }
+} 

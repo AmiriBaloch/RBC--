@@ -1,0 +1,97 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.content-area {
+  flex: 1;
+  margin-left: 250px;
+  transition: all 0.3s;
+  background-color: #f8f9fa;
+  width: calc(100% - 250px);
+}
+
+.content-wrapper {
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .content-area {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .content-wrapper {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+  
+  /* Adjust card paddings for small screens */
+  .card {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-body {
+    padding: 0.5rem;
+  }
+  
+  /* Ensure table containers don't overflow */
+  .table-responsive {
+    margin-left: -5px;
+    margin-right: -5px;
+    width: calc(100% + 10px);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .content-area {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .content-wrapper {
+    padding: 15px;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure table containers don't overflow */
+  .table-responsive {
+    margin-left: -5px;
+    margin-right: -5px;
+    width: calc(100% + 10px);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .content-area {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content-area {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* Fix for mobile horizontal scroll issues */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+} 

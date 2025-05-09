@@ -1,0 +1,100 @@
+.applicants-page {
+  padding: 1rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.position-filters {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.position-filters h5 {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.position-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.position-buttons .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input {
+  padding-left: 35px;
+  border-radius: 20px;
+}
+
+.applicants-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* Action Buttons - Updated to display horizontally */
+.action-button {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+/* Button container to ensure buttons are properly aligned */
+td .action-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.applicant-detail p {
+  margin-bottom: 0.5rem;
+}
+
+.applicant-detail strong {
+  color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .position-buttons {
+    flex-direction: column;
+  }
+  
+  .position-buttons .btn {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+} 
